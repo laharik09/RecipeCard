@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://em-content.zobj.net/thumbs/120/apple/354/fried-egg_1f373.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <h1 class="page-title">
+        <span class="logo-icon">👨‍🍳</span> Welcome to ChefMate
+    </h1>
+    <p class="tagline">Your Smart Cooking Companion..!</p>
+
+    <div class="main-container"></div>
+    <div class="main-container">
+        <div id="recipePreviewContainer" class="recipe-preview-container">
+        </div>
+
+        <div id="detailedRecipeCard" class="recipe-card hidden">
+            <div id="confetti-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden;"></div>
+
+            <button id="backToPreviewsBtn" class="btn back-btn">← Back to Recipes</button>
+
+            <h1 class="title" id="recipeTitle"></h1>
+            <img src="" alt="Dish Image" class="recipe-image" id="recipeImage">
+
+            <div class="info">
+                <p><strong>Preparation Time:</strong> <span id="prepTime"></span></p>
+                <p><strong>Servings:</strong> <span id="servings"></span></p>
+            </div>
+
+            <button id="toggleIngredients" class="btn">Show Ingredients</button>
+            <ul id="ingredients" class="hidden"></ul>
+
+            <button id="toggleSteps" class="btn">Show Steps</button>
+            <ol id="steps" class="hidden"></ol>
+
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="buttons">
+                <button id="startBtn" class="btn">Start Cooking</button>
+                <div id="timer" class="timer">⏱ Time Left: <span id="timeRemaining">--</span></div>
+                <button id="nextBtn" class="btn hidden">Next Step</button>
+                <button onclick="window.print()" class="print-btn">🖨 Print Recipe</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
