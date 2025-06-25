@@ -1,7 +1,7 @@
 
 # 👨‍🍳 ChefMate - Interactive Recipe Cards
 
-](https://recipe-cardss.netlify.app/)
+https://recipe-cardss.netlify.app/
 
 
 ChefMate is a responsive, interactive web app that helps users explore and follow step-by-step cooking instructions for various recipes. It offers a clean and engaging UI, built with HTML, CSS, and JavaScript, including animations, transitions, a cooking timer, and a confetti celebration effect when a recipe is completed.
