@@ -146,6 +146,7 @@ body {
     color: #5d3a00;
     margin-bottom: 15px;
     font-size: 2.5em;
+    margin-top: 50px;
 }
 
 .recipe-image {
@@ -334,6 +335,7 @@ ol:not(.hidden) {
     }
     .title {
         font-size: 1.8em;
+        margin-top: 40px;
     }
     .recipe-image {
         height: 200px;
@@ -376,6 +378,7 @@ ol:not(.hidden) {
     }
     .title {
         font-size: 1.5em;
+        margin-top: 35px;
     }
     .recipe-image {
         height: 180px;
